@@ -20,16 +20,17 @@
         <div class="conteiner">
             <nav class="nav">
                 <a href="#" class="nav__logo">Web<span class="nav__icon">studio</span></a>
-                <button type="button" class="nav__button nav__button is-open"
-                aria-expanded="false" 
-                data-menu-button>
+                <button type="button" class="nav__button is-open"data-menu-button
+                aria-expanded="false"
+                aria-controls="mobail-menu" 
+                >
                     <svg width="40" height="40"
                     aria-label="переключатель мобильного меню">
                         <use class="nav__button-close" href="./images/icons.svg/symbol-defs.svg#icon-close"></use>
                         <use class="nav__button-menu" href="./images/icons.svg/symbol-defs.svg#icon-menu_40px"></use>
                     </svg>
                 </button>
-                <div class="mobail-menu is-open">
+                <div class="mobail-menu is-open" id="mobail-menu" data-menu>
                    mobail-menu 
                 </div>
          <!-- Навигация на другие страницы -->
@@ -424,7 +425,8 @@
 
 
 
-<script scr="./js/mobile-menu.js"></script>
+
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
