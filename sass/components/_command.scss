@@ -1,0 +1,84 @@
+.section--command{
+  background: rgba(245, 244, 250, 1)
+}
+  
+.command__container{
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.command__box{
+  text-align: center;
+  background: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+&:not(:last-child){
+  margin-right: 30px;}
+}
+.command-column{
+  padding: 30px 32px;
+
+}
+.command-column__title{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--text-primary);
+}
+
+
+.command-column__profesion{
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--text-secondary);
+}
+
+
+
+.command-social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.command-social__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+&:not(:last-child){
+  margin-right: 10px;}
+}
+.command-social__list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  transition: background-color var(--bezier-time);
+&:hover,
+&:focus{
+  background-color: var(--theme-color);}
+  
+
+&:hover .command-social__svg,
+&:focus .command-social__svg{
+  fill: var(--primary-white-color);
+  transition: var(--bezier-time);}
+}
+.command-social__svg{
+  fill: var(--icons-color);
+  margin: 0;
+}
+

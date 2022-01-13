@@ -1,0 +1,44 @@
+.peculiarites{
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.peculiarites__box{
+  flex-wrap: wrap;
+  width: 270px;
+&:not(:last-child){
+  margin-right: 30px;}
+}
+
+.peculiarites__svg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 25px 0;
+  width: 270px;
+  background-color: #F5F4FA;
+}
+
+
+
+.peculiarites__title{
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.peculiarites__text{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-secondary);
+}

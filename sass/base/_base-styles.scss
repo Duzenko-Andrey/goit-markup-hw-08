@@ -1,0 +1,39 @@
+.conteiner{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,ol{
+  list-style: none;
+  padding: 0;
+}
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section__special{
+  padding-top: 0;
+  @media screen and (max-width: 1199px){
+    display: none;
+  }
+}
+.section__title{
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-primary);
+}

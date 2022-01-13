@@ -1,0 +1,36 @@
+.clients{
+  display: flex;
+  margin: 0;
+}
+
+.clients__box{
+  width: 170px;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+
+&:not(:last-child){
+  margin-right: 30px;}
+}
+
+.clients__list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 16px 32px;
+  list-style: none;
+  transition: border var(--bezier-time);
+
+&:hover,
+&:focus{
+  border: 1px solid var(--theme-color);}
+  
+&:hover .clients__svg,
+&:focus .clients__svg{
+  fill: var(--theme-color);} 
+}
+.clients__svg{
+  fill: var(--icons-color);
+  transition: fill var(--bezier-time);
+}
+
