@@ -32,7 +32,32 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px
    rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+    @media screen and (min-width: 600px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
+//   @media screen and (min-width: 600px) {
+//     width: 450px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     width: 528px;
+//   }
+  
+//   @media screen and (max-width: 399px) {
+//     padding: 40px 15px;
+//   }
+
+//   @media screen and (min-width: 600px) and (orientation: landscape) and (max-width: 915px) {
+//     top: 115%;
+
+//     @media screen and (min-width: 700px) {
+//       top: 90%
+//     }
+// }
 .modal__btn{
   position: absolute;
   top: 8px;

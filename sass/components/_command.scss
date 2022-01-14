@@ -3,7 +3,7 @@
 }
   
 .command__container{
-  display: flex;
+  // display: flex;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -51,9 +51,9 @@
 }
 
 .command-social__item{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 
 &:not(:last-child){
   margin-right: 10px;}

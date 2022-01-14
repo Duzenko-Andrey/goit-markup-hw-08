@@ -1,12 +1,12 @@
 .peculiarites{
-  display: flex;
+  // display: flex;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .peculiarites__box{
-  flex-wrap: wrap;
-  width: 270px;
+  // flex-wrap: wrap;
+  // width: 270px;
 &:not(:last-child){
   margin-right: 30px;}
 }
