@@ -31,7 +31,7 @@ ul,ol{
   padding-bottom: 94px;
 }
 .section__special{
-  padding-top: 0;
+  
   @media screen and (max-width: 1199px){
     display: none;
   }
@@ -45,4 +45,16 @@ ul,ol{
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-primary);
+}
+h1,
+h2,
+h3{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
 }

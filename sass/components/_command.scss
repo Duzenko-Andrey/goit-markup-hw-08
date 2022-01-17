@@ -3,9 +3,16 @@
 }
   
 .command__container{
-  // display: flex;
+  
   margin-top: 0;
   margin-bottom: 0;
+@media screen and (min-width: 768px){
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }  
+  
 }
 
 .command__box{
@@ -14,50 +21,62 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-&:not(:last-child){
-  margin-right: 30px;}
+@media screen and (max-width: 767px){
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }  
+
+@media screen and (min-width: 768px){
+      width: calc((100% - 60px)/2);
+      margin: 15px;
+    }
+
+@media screen and (min-width: 1200px){
+      width: calc((100% - 120px)/4);
+    }
+  
 }
 .command-column{
   padding: 30px 32px;
 
 }
 .command-column__title{
-  margin-top: 0px;
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--text-primary);
-}
-
-
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+color: var(--text-primary);
+  }
+  
 .command-column__profesion{
-  margin-top: 0;
-  margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--text-secondary);
-}
-
-
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+  }
 
 .command-social{
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    width: 44px;
+    height: 44px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
 }
 
-.command-social__item{
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-
-&:not(:last-child){
-  margin-right: 10px;}
-}
 .command-social__list{
   display: flex;
   justify-content: center;
@@ -81,4 +100,5 @@
   fill: var(--icons-color);
   margin: 0;
 }
+
 

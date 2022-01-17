@@ -170,11 +170,24 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="command__container">
                     <li class="command__box">
-                        <img src="./images/foto1/foto1.jpg" alt="фотография Игоря Демьяненко"
-                         width="270" height="260" />
+                      <picture>
+                        <source srcset="
+                         ./images/foto1/foto1.jpg  1x,
+                         ./images/foto1/foto1@2.jpg 2x"
+                        media="(min-width: 1200px)" />
+                        <source srcset="
+                        ./images/foto1/foto1tab.jpg 1x,
+                        ./images/foto1/foto1tab@2.jpg 2x
+                        " media="(min-width: 768px)" />
+                        <source srcset="
+                        ./images/foto1/foto1mob.jpg 1x,
+                        ./images/foto1/foto1mob@2.jpg 2x
+                        " media="(min-width: 320px)" />
+                        <img src="./images/foto1/foto1.jpg" class="img" alt="Игорь Демьяненко" />
+                      </picture>
                         <div class="command-column">
                         <h3 class="command-column__title">Игорь Демьяненко</h3>
-                        <p class="command-column__profession">Product Designer</p>
+                        <p class="command-column__profesion">Product Designer</p>
                             <ul class="command-social">
                             <li class="command-social__item">
                                 <a href="#"class="command-social__list"><svg class="command-social__svg" width="20" height="20">
@@ -200,8 +213,21 @@
                         </div>
                     </li>
                     <li class="command__box">
-                        <img src="./images/foto2/foto2.jpg" alt="фотография Ольги Репиной"
-                        width="270" height="260" />
+                    <picture>
+                        <source srcset="
+                                /images/foto2/foto2.jpg 1x,
+                                ./images/foto2/foto2@2.jpg 2x
+                              " media="(min-width: 1200px)" />
+                        <source srcset="
+                                ./images/foto2/foto2tab.jpg 1x,
+                                ./images/foto2/foto2tab@2.jpg 2x
+                              " media="(min-width: 768px)" />
+                        <source srcset="
+                                ./images/foto2/foto2mob.jpg 1x,
+                                ./images/foto2/foto2-mob@2.jpg 2x
+                              " media="(min-width: 320px)" />
+                    <img src="./images/foto2/foto2.jpg" class="img" alt="Ольга Репина" />
+                    </picture>
                         <div class="command-column">
                         <h3 class="command-column__title">Ольга Репина</h3>
                         <p class="command-column__profesion">Frontend Developer</p>
@@ -230,8 +256,21 @@
                         </div>
                     </li>
                     <li class="command__box">
-                        <img src="./images/foto3/foto3.jpg" alt="фотография Николая Тарасова"
-                        width="270" height="260" />
+                    <picture>
+                        <source srcset="
+                            ./images/foto3/foto3.jpg 1x,
+                            ./images/foto3/foto3@2.jpg 2x
+                            " media="(min-width: 1200px)" />
+                        <source srcset="
+                            ./images/foto3/foto3tab.jpg 1x,
+                            ./images/foto3/foto3tab@2.jpg 2x
+                            " media="(min-width: 768px)" />
+                        <source srcset="
+                            ./images/foto3/foto3mob.jpg 1x,
+                            ./images/foto3/foto3mob@2.jpg 2x
+                            " media="(min-width: 320px)" />
+                        <img src="./images/foto3/foto3.jpg" class="img" alt="Ольга Репина" />
+                    </picture>
                         <div class="command-column">
                         <h3 class="command-column__title">Николай Тарасов</h3>
                         <p class="command-column__profesion">Marketing</p>
@@ -260,8 +299,21 @@
                         </div>
                     </li>
                     <li class="command__box">
-                        <img src="./images/foto4/foto4.jpg" alt="фотография Михаила Ермакова"
-                        width="270" height="260" />
+                        <picture>
+                            <source srcset="
+                                ./images/foto4/foto4.jpg 1x,
+                                ./images/foto4/foto4r@2.jpg 2x
+                                " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./images/foto4/foto4tab.jpg 1x,
+                                ./images/foto4/foto4tab@2.jpg 2x
+                                " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./images/foto4/foto4mob.jpg 1x,
+                                ./images/foto4/foto4mob@2.jpg 2x
+                                " media="(min-width: 320px)" />
+                            <img src="./images/foto4/foto4.jpg" class="img" alt="Ольга Репина" />
+                        </picture>
                         <div class="command-column">
                         <h3 class="command-column__title">Михаил Ермаков</h3>
                         <p class="command-column__profesion">UI Designer</p>
@@ -292,7 +344,9 @@
                 </ul>
             </div>
         </section>
+
         <!-- постоянные клиенты -->
+
         <section class="section">
             <div class="conteiner">
                 <h2 class="section__title">Постоянные клиенты</h2>
@@ -336,9 +390,9 @@
 
     <footer class="footer">
      <div class="conteiner conteiner__foot ">
-        <div>
+        <div class="address">
             <a href="#" class="nav__logo">Web<span class="nav__icon--color">studio</span></a>
-            <address class="address">
+            <address>
                 <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
                 <a href="mailto:info@devstudio.com" class="address__list">info@devstudio.com</a>
                 <a href="tel:+380961111111" class="address__list--phone">+38 096 111 11 11</a>
