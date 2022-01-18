@@ -13,7 +13,8 @@
   
 
   @media screen and (min-width: 1200px){ 
-    
+      display: flex;
+      
       justify-content: normal;
     }
   
@@ -41,7 +42,7 @@
   }
 }
 .address{
- font-style: normal;
+//  font-style: normal;
 
 @media screen and (max-width: 1199px){
       margin-bottom: 60px;
@@ -53,6 +54,10 @@
      
 }
 .address__list{
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   display: block;
   margin-bottom: 9px;
   font-weight: 500;
@@ -63,6 +68,9 @@
   color: rgba(255, 255, 255, 0.6);   
 
 &--phone{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   display: block;
   font-weight: 500;
   text-decoration: none;    
@@ -73,10 +81,13 @@
 }
 
 
-.address__text{    
+.address__text{  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;  
   margin-top: 20px;
   margin-bottom: 9px;
-  font-weight: normal;    
+      
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -193,7 +204,7 @@ rgba(33, 150, 243, 1);}
 /* Подписаться */
 
 .form{
-  // margin-left: 93px;
+  //
       @media screen and (min-width: 768px) {
       width: 450px;
     }
@@ -201,10 +212,16 @@ rgba(33, 150, 243, 1);}
     @media screen and (max-width: 1199px) {
       margin-bottom: 20px;
     }
+    @media screen and (min-width: 1200px){
+      display: flex;
+       width: 358px;
+      // justify-content: center;
+      
+    }
   
 }
 .form__title{
-  margin: 0 0 20px 0;
+  // margin: 0 0 20px 0;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -218,15 +235,17 @@ rgba(33, 150, 243, 1);}
    @media screen and (max-width: 1200px) {
      flex-direction: column;}
     @media screen and (min-width: 1200px) {
-   
+     align-items: flex-end;
       flex-direction: row;
       justify-content: normal;
+       width: 358px;
     }
   
 }
 .form-box__input{
   width: 100%;
   height: 50px;
+  margin-top: 20px;
   margin-right: 12px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -251,7 +270,7 @@ rgba(33, 150, 243, 1);}
       width: 450px;}
 
  @media screen and (min-width: 1200px){
-      width: 358px; 
+       width: 358px;
        margin-right: 12px;
     }
 
@@ -261,6 +280,7 @@ rgba(33, 150, 243, 1);}
 }
 
 .form__submit{
+  
   display: flex;
   align-items: center;
   text-align: center;
