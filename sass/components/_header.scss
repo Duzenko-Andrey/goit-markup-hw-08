@@ -27,6 +27,8 @@ padding: 15px 16px;
     line-height: 1.19;
     margin-right: 93px;
   }
+     @media screen and (max-width: 1200px){
+     margin-right: 88px;} 
 }
 
 .nav__icon{
@@ -44,10 +46,10 @@ padding: 15px 16px;
   flex-wrap: wrap;
   align-items: center;
   padding: 0;
+// @media screen and (min-width: 768px){
+//   flex-direction: row;}  
 
-    
-
-}
+// }
 // навигация мобильного меню
 
 .nav__button{
@@ -184,7 +186,7 @@ padding: 15px 16px;
   width: 100%;}
   }
 }
-
+}
 /* Ссылка на вебсайт,телефонный номер */
 
 
@@ -194,7 +196,12 @@ padding: 15px 16px;
     display: flex;
     align-items: center;
     margin-left: auto;
-    
+  }
+   @media screen and (max-width: 1200px){
+    flex-direction: column-reverse;
+    // justify-content: space-between;
+    padding: 21px 0;
+    // margin-left: 84px;
   }
 }
 
@@ -215,12 +222,16 @@ padding: 15px 16px;
 &:focus{
   color: var(--theme-color);}
 
+
   @media screen and (min-width: 768px){
   padding-top: 32px;
   padding-bottom: 32px;
       
   font-size: 14px;
   line-height: 1.14;}
+     @media screen and (max-width: 1200px){
+     padding: 0;
+    margin: 0 0 10px 0;}
 }
  
 
@@ -268,7 +279,10 @@ padding: 15px 16px;
   margin-bottom: 0;    
   font-size: 14px;
   line-height: 1.14;}
-  color: var(--text-secondary);  
+  color: var(--text-secondary); 
+       @media screen and (max-width: 1200px){
+     padding: 0;
+    align-self: start;}
 
 &:hover .nav-box__svg,
 &:focus .nav-box__svg{
