@@ -1,18 +1,18 @@
 .section--command{
+
   background: rgba(245, 244, 250, 1)
 }
   
 .command__container{
-  
   margin-top: 0;
   margin-bottom: 0;
+
 @media screen and (min-width: 768px){
 
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
   }  
-  
 }
 
 .command__box{
@@ -47,7 +47,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-color: var(--text-primary);
+    color: var(--text-primary);
   }
   
 .command-column__profesion{
@@ -60,17 +60,17 @@ color: var(--text-primary);
   }
 
 .command-social{
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 
-  &__item {
+&__item {
     width: 44px;
     height: 44px;
 
-    &:not(:last-child) {
+&:not(:last-child) {
       margin-right: 10px;
-    }
   }
+}
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,5 +100,3 @@ color: var(--text-primary);
   fill: var(--icons-color);
   margin: 0;
 }
-
-

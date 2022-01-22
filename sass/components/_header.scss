@@ -2,7 +2,6 @@
 border-bottom: 1px solid #ECECEC;
 position: relative;
 
-
   }
 .nav__logo{
   margin-top: 0;
@@ -16,19 +15,17 @@ position: relative;
   color: var(--theme-color);
   text-decoration: none;
   
- @media screen and (max-width: 787px){
-padding: 15px 16px;
-
-
-
+@media screen and (max-width: 787px){
+   padding: 15px 16px;
  }
-  @media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px){
     font-size: 26px;
     line-height: 1.19;
     margin-right: 93px;
   }
-     @media screen and (max-width: 1200px){
-     margin-right: 88px;} 
+@media screen and (max-width: 1200px){
+ 
+  margin-right: 88px;} 
 }
 
 .nav__icon{
@@ -46,23 +43,24 @@ padding: 15px 16px;
   flex-wrap: wrap;
   align-items: center;
   padding: 0;
-// @media screen and (min-width: 768px){
-//   flex-direction: row;}  
 
-// }
 // навигация мобильного меню
 
 .nav__button{
   position: absolute;
   top: 10px;
   right: 15px;
-  margin: 10px;
+  fill: var(--text-primary);
   padding: 0;
   z-index: 20;
   border: none;
   background-color: transparent;
+ 
+&:hover,
+&:focus{
+  fill: var(--theme-color);}
 
-  @media screen and (min-width: 768px){
+@media screen and (min-width: 768px){
     display: none;
   }
 }
@@ -80,13 +78,14 @@ padding: 15px 16px;
 }
 
 .mobail-menu{
-  @media screen and (max-width: 767px) {
+
+@media screen and (max-width: 767px){
     position: absolute;
     top: 0;
     left: 0;
    
     overflow-y: scroll;
-
+    z-index: 2;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
@@ -120,25 +119,25 @@ padding: 15px 16px;
 }
 
 
-
 // Навигация на другие страницы 
 
 
 .nav-row{
   display: flex;
   margin: 0;
-  @media screen and (max-width: 767px){
+
+@media screen and (max-width: 767px){
     margin-bottom: 32px;
     display: block;
   }
-
 }
+
 .nav-row__item{
-  // margin-right: 50px;
   position: relative;  
 
 &:not(:last-child){
   margin-bottom: 32px;}
+
 @media screen and (min-width: 768px){
 &:not(:last-child) {
   margin-bottom: 0;
@@ -192,16 +191,14 @@ padding: 15px 16px;
 
 .nav-box{
 
-  @media screen and (min-width: 768px){
+@media screen and (min-width: 768px){
     display: flex;
     align-items: center;
     margin-left: auto;
   }
-   @media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px){
     flex-direction: column-reverse;
-    // justify-content: space-between;
     padding: 21px 0;
-    // margin-left: 84px;
   }
 }
 
@@ -223,13 +220,14 @@ padding: 15px 16px;
   color: var(--theme-color);}
 
 
-  @media screen and (min-width: 768px){
+@media screen and (min-width: 768px){
   padding-top: 32px;
   padding-bottom: 32px;
       
   font-size: 14px;
   line-height: 1.14;}
-     @media screen and (max-width: 1200px){
+
+@media screen and (max-width: 1200px){
      padding: 0;
     margin: 0 0 10px 0;}
 }
@@ -249,11 +247,11 @@ padding: 15px 16px;
   fill: var(--theme-color);
   transition: fill var(--bezier-time);}
 
- @media screen and (max-width: 767px){
+@media screen and (max-width: 767px){
    display: none;
  }
- 
 }
+
 .nav-box__list--phone{
   display: flex;
   align-items: center;
@@ -264,12 +262,16 @@ padding: 15px 16px;
   line-height: 1.17;
 
   text-decoration: none;
-  color: var(--theme-color);
+  color: var(--text-secondary);
+  
   letter-spacing: 0.02em;
   transition: color var(--bezier-time);
 
 &:hover,
 &:focus{
+  color: var(--theme-color);}
+
+@media screen and (max-width: 768px){
   color: var(--theme-color);}
 
 @media screen and (min-width: 767px){
@@ -279,8 +281,10 @@ padding: 15px 16px;
   margin-bottom: 0;    
   font-size: 14px;
   line-height: 1.14;}
-  color: var(--text-secondary); 
-       @media screen and (max-width: 1200px){
+
+
+
+@media screen and (max-width: 1200px){
      padding: 0;
     align-self: start;}
 
@@ -297,7 +301,7 @@ padding: 15px 16px;
   text-decoration: none;
   margin-top: 64px;
   
-  @media screen and (min-width: 768px){
+@media screen and (min-width: 768px){
     display: none;
   }
   
