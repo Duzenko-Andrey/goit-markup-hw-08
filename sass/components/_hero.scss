@@ -8,7 +8,11 @@
   padding-bottom: 118px;
   background: #C4C4C4;
 
-  @media screen and (max-width: 480px){
+  
+  @media screen and (min-width: 1200px){
+    padding-top: 200px;
+    padding-bottom: 200px;}
+        @media screen and (max-width: 480px){
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/heromob@1x.jpg);}
 
@@ -19,7 +23,7 @@
           url(../images/hero/heromob@2x.jpg);
     }
 
-    @media screen and (max-width: 768px){
+       @media screen and (max-width: 798px){
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/herotab.jpg);}
 
@@ -30,7 +34,7 @@
         url(../images/hero/herotab@2x.jpg);
     }
 
-  @media screen and (min-width: 769px){
+      @media screen and (min-width: 769px){
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/heroimg@1x.jpg)}
 
@@ -40,11 +44,6 @@
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero/heroimg@2x.jpg);
     }
-  
-  @media screen and (min-width: 1200px){
-    padding-top: 200px;
-    padding-bottom: 200px;}
-  
 }
 .hero__title{
   
